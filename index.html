@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=Wrapper, initial-scale=1.0">
-    <link rel="stylesheet" href="./normalise/normalise.css">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=Wrapper, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header-container container">
-                <a href="" class="logo"></a>
-                <nav class="menu">
-                    <ul class="list">
-                        <li class="item"><a href="" class="link">photo</a></li>
-                        <li class="item"><a href="" class="link">gallery</a></li>
-                        <li class="item"><a href="" class="link">про нас</a></li>
-                        <li class="item"><a href="" class="link">cataloge</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="main">
-            <div class="main-container container">
-                <h1 class="title">Тестувальна сторінка</h1>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer-container container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis perferendis quidem voluptatem? Totam dicta, veritatis ducimus vel sapiente deleniti excepturi, repudiandae repellat perferendis debitis sit quia libero, a expedita iste!</p>
-            </div>
-        </footer>
+      <header class="header">
+        <div class="header-container container">
+          <a href="" class="logo"></a>
+          <nav class="menu">
+            <ul class="list">
+              <li class="item"><a href="" class="link">photo</a></li>
+              <li class="item"><a href="" class="link">gallery</a></li>
+              <li class="item"><a href="" class="link">About</a></li>
+              <li class="item"><a href="" class="link">cataloge</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main-container container">
+          <h1 class="title">Тестувальна сторінка</h1>
+          <form class="form">
+            <label for="email" class="label">Пошта</label>
+            <input type="email" name="email">
+            
+            <label for="tel" class="label">Номер телефону</label>
+            <input type="tel" name="user-phone" id="tel">
+
+            <label for="pass" class="label">Password</label>
+            <input type="password" name="pass" id="pass" maxlength="8">
+
+            <label for="age" class="label">Вік</label>
+            <input type="number" name="age" id="age" value="40" min="18" max="50" step="2">
+            <button type="submit" class="button">Відправити</button>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-container container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <nobr>Perspiciatis perferendis quidem voluptatem?</nobr> Totam dicta, veritatis
+            ducimus vel sapiente deleniti excepturi, repudiandae repellat
+            perferendis debitis sit quia libero, a expedita iste!
+          </p>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
