@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-  background-color: lightblue;
+  background-color: rgb(180, 180, 180);
   min-width: 100%;
   min-height: 100%;
   display: flex;
@@ -111,17 +111,70 @@ img {
   margin-bottom: 35px;
 }
 /* ----------forms---------- */
+.text-form {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(0, 79, 226);
+}
+
 .form {
+  padding: 30px 20px;
+  background-color: lightseagreen;
+  max-width: 30%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+  transition: all ease 0.3s;
+}
+.input-wrap {
+  margin: 0 0 25px 0;
+  position: relative;
 }
 .label {
-  display: block;
-  margin-bottom: 5px;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: all ease 0.3s;
+  color: #a7a7a7;
 }
 input {
-  margin: 0 0 15px 0;
+  padding: 10px 5px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  display: block;
+}
+input::placeholder {
+  color: #00000000;
+}
+
+
+input:focus {
+  outline: 3px solid rgb(0, 191, 255);
+}
+input:focus + label, input:not(:placeholder-shown) + label {
+  top: -35%;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+
 }
 .button {
   display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: cadetblue;
+  border: none;
+  box-shadow: 0px 5px 10px black;
+  transition: all ease 0.3s;
+}
+.button:active {
+  box-shadow: 0px 1px 0.5px black; 
+  transform: translateY(1px);
+  padding: 10px;
+  background-color: rgb(123, 150, 151);
 }
 
 /* --footer----------------------------- */

@@ -24,19 +24,25 @@
       </header>
       <main class="main">
         <div class="main-container container">
+          
           <h1 class="title">Тестувальна сторінка</h1>
           <form class="form">
-            <label for="email" class="label">Пошта</label>
-            <input type="email" name="email">
-            
-            <label for="tel" class="label">Номер телефону</label>
-            <input type="tel" name="user-phone" id="tel">
+            <p class="text-form">Відправка форми(тест)</p>
+            <div class="input-wrap">
+              <input type="email" name="email" autofocus placeholder="yes">
+              <label for="email" class="label">Пошта</label>
+            </div>
 
-            <label for="pass" class="label">Password</label>
-            <input type="password" name="pass" id="pass" maxlength="8">
+            <div class="input-wrap">
+              <input type="tel" name="user-phone" id="tel" placeholder="yes">
+              <label for="tel" class="label">Номер телефону</label>
+            </div>
 
-            <label for="age" class="label">Вік</label>
-            <input type="number" name="age" id="age" value="40" min="18" max="50" step="2">
+            <div class="input-wrap">
+              <input type="password" name="pass" id="pass" maxlength="8" placeholder="yes">
+              <label for="pass" class="label">Password</label>
+            </div>
+
             <button type="submit" class="button">Відправити</button>
           </form>
         </div>
