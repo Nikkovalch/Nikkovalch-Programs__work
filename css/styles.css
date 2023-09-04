@@ -8,7 +8,7 @@ body {
   background-color: var(--background-light);
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -65,6 +65,9 @@ img {
 .header {
   background-color: lightseagreen;
   padding: 20px 0;
+  position: fixed;
+  min-width: 100%;
+  z-index: 10;
 }
 .header-container {
   display: flex;
@@ -102,15 +105,21 @@ img {
   flex: 1 0 auto;
   padding: 20px 0;
 }
+.main-container {
+  padding-top: 150px;
+}
 .title {
   font-size: 36px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-align: center;
-  color: rgb(202, 147, 79);
+  color: rgb(251, 255, 0);
   font-weight: 600;
   margin-bottom: 35px;
 }
 /* ----------forms---------- */
+.section-form {
+  padding: 30px 0;
+}
 .text-form {
   font-size: 24px;
   text-align: center;
@@ -216,6 +225,40 @@ img {
   padding: 10px;
   background-color: rgb(37, 152, 190);
 }
+/* --------------------------------------------------------------------- */
+.section-image {
+  padding: 30px 0;
+  display: flex;
+  gap: 30px;
+}
+.image__text {
+  font-size: 24px;
+}
+.image,
+.image-two {
+  width: 350px;
+  height: 350px;
+  background-color: cadetblue;
+  border: 1px solid #e7ff0d;
+
+}
+.img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+figure {
+  margin: 0;
+}
+/* ----------------------------------- */
+.image-two {
+  background-image: url(../image/завантаження.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /* --footer----------------------------- */
 .footer {
